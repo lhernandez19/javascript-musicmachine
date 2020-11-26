@@ -52,11 +52,21 @@ $(document).ready(function () {
 
     // Empty array to record a song as the user clicks notes
     var recordedNotes = [];
+    var songOne = ["A,3","A,4","A,5","A,6","A,7"];
+    var songTwo = ["D,3","D,4","D,5","D,6","D,7"];
 
     // This anonymous function makes the Play Recording
     // button play the array of recorded notes
     $("#playButton").click(function () {
         playRecording(recordedNotes);
+    });
+
+    $("#songOneButton").click(function () {
+        playRecording(songOne);
+    });
+
+    $("#songTwoButton").click(function () {
+        playRecording(songTwo);
     });
 
     // Assign functions to the other buttons
